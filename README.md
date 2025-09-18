@@ -14,4 +14,24 @@ A full-stack Python project combining historical stock data and financial news s
 ---
 
 ## Folder Structure
+chaotic-whispers/
+│
+├── src/
+│ ├── data_loader.py # Fetch stock data & news
+│ ├── features.py # Merge stock + sentiment features
+│ ├── model.py # LSTM model definition
+│ ├── sentiment.py # FinBERT sentiment pipeline
+│ ├── dataset.py # Dataset & DataLoader
+│ ├── train.py # Training script
+│ └── evaluate.py # Evaluation script
+│
+├── chaotic_whispers_flask/ # Flask app
+│ ├── templates/
+│ └── static/
+│
+├── models/ # Trained model weights (.pth)
+├── notebooks/ # Optional: Jupyter notebooks
+├── requirements.txt
+├── README.md
+└── .gitignore
 
