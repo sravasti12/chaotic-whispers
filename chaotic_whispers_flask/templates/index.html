@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chaotic Whispers – Stock Predictor</title>
+</head>
+<body>
+    <h1>Chaotic Whispers – Stock Predictor</h1>
+
+    <form method="post">
+        <label for="ticker">Enter Ticker Symbol:</label>
+        <input type="text" id="ticker" name="ticker" value="{{ ticker or '' }}">
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if plot_url %}
+        <h2>Prediction for {{ ticker }}</h2>
+        <img src="data:image/png;base64,{{ plot_url }}" alt="Prediction Plot">
+    {% endif %}
+</body>
+</html>

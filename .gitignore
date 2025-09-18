@@ -1,0 +1,20 @@
+﻿# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+
+# Environment variables
+.env
+
+# Large model files (optional, you can keep or remove)
+*.pth
